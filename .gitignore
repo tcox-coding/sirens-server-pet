@@ -1,0 +1,6 @@
+/target
+/data
+.env
+
+# Scratch output from tools/generate_placeholder_art.py previews.
+contact_sheet.png
