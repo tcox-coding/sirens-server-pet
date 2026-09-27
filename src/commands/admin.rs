@@ -289,15 +289,15 @@ pub async fn set_image(
     state.save_pet(&pet).await?;
 
     let species = state.species.get_or_first(&pet.species);
-    let (image_url, _) = ui::art_for(&state.art, &pet).await;
-    let embed = ui::status_embed(&pet, species, image_url, now_secs(), &state.config.rates);
+    let card = ui::pet_card(&state.art, &pet, species, now_secs(), &state.config.rates).await;
 
     respond(
         ctx,
         cmd,
         CreateInteractionResponseMessage::new()
             .content(format!("**{}** has a new look.", pet.name))
-            .embed(embed),
+            .embed(card.embed)
+            .add_files(card.files),
     )
     .await
 }

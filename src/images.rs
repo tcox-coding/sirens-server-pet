@@ -7,7 +7,7 @@
 //!   _default/            <- used when a species has no art of its own
 //!     content.png
 //!     hungry.png
-//!   blob/
+//!   cat/
 //!     default.png        <- covers every mood not listed below
 //!     happy.png
 //!     sleeping.png
@@ -376,7 +376,7 @@ mod tests {
         let index = ImageIndex::scan(root).expect("scanning the art directory");
         if index.is_empty() {
             // Art has not been generated in this checkout; nothing to verify.
-            // `tools/generate_placeholder_art.py` produces it.
+            // Copy the sprites from `concept-sprites/` into `assets/pets/`.
             return;
         }
 

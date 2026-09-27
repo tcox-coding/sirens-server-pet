@@ -3,6 +3,7 @@
 //! One pet per guild, shared by everyone. Its stats decay in real time, so a
 //! server that ignores it will lose it.
 
+mod card;
 mod commands;
 mod config;
 mod db;
@@ -79,7 +80,7 @@ async fn main() -> Result<()> {
 /// Log which species are short of art.
 ///
 /// Missing art is never fatal - the lookup falls back to the shared `_default`
-/// set - but silently showing a grey blob for a species someone just added is
+/// set - but silently showing a placeholder for a species someone just added is
 /// a confusing way to find that out.
 fn report_art_coverage(species: &Registry, art: &ImageIndex) {
     let with_art = art.species_with_art();

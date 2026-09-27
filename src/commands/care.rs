@@ -85,19 +85,18 @@ pub async fn adopt(state: &Arc<AppState>, ctx: &Context, cmd: &CommandInteractio
     );
     state.save_pet(&pet).await?;
 
-    let (image_url, attachment) = ui::art_for(&state.art, &pet).await;
-    let embed = ui::status_embed(&pet, species, image_url, now_secs(), &state.config.rates)
+    let mut card = ui::pet_card(&state.art, &pet, species, now_secs(), &state.config.rates).await;
+    card.embed = card
+        .embed
         .title(format!("\u{1F389} {} has joined the server!", pet.name));
 
-    let mut message = CreateInteractionResponseMessage::new()
+    let message = CreateInteractionResponseMessage::new()
         .content(format!(
             "<@{}> adopted a {}. Keep them fed and happy with `/feed` and `/play`.",
             cmd.user.id, species.name
         ))
-        .embed(embed);
-    if let Some(file) = attachment {
-        message = message.add_file(file);
-    }
+        .embed(card.embed)
+        .add_files(card.files);
 
     respond(ctx, cmd, message).await
 }
@@ -119,13 +118,11 @@ pub async fn status(state: &Arc<AppState>, ctx: &Context, cmd: &CommandInteracti
     };
 
     let species = state.species.get_or_first(&pet.species);
-    let (image_url, attachment) = ui::art_for(&state.art, &pet).await;
-    let embed = ui::status_embed(&pet, species, image_url, now_secs(), &state.config.rates);
+    let card = ui::pet_card(&state.art, &pet, species, now_secs(), &state.config.rates).await;
 
-    let mut message = CreateInteractionResponseMessage::new().embed(embed);
-    if let Some(file) = attachment {
-        message = message.add_file(file);
-    }
+    let message = CreateInteractionResponseMessage::new()
+        .embed(card.embed)
+        .add_files(card.files);
     respond(ctx, cmd, message).await
 }
 
@@ -344,15 +341,12 @@ pub async fn rest(state: &Arc<AppState>, ctx: &Context, cmd: &CommandInteraction
     state.save_pet(&pet).await?;
 
     let species = state.species.get_or_first(&pet.species);
-    let (image_url, attachment) = ui::art_for(&state.art, &pet).await;
-    let embed = ui::status_embed(&pet, species, image_url, now_secs(), &state.config.rates);
+    let card = ui::pet_card(&state.art, &pet, species, now_secs(), &state.config.rates).await;
 
-    let mut response = CreateInteractionResponseMessage::new()
+    let response = CreateInteractionResponseMessage::new()
         .content(message)
-        .embed(embed);
-    if let Some(file) = attachment {
-        response = response.add_file(file);
-    }
+        .embed(card.embed)
+        .add_files(card.files);
     respond(ctx, cmd, response).await
 }
 
@@ -466,15 +460,12 @@ where
         ));
     }
 
-    let (image_url, attachment) = ui::art_for(&state.art, &pet).await;
-    let embed = ui::status_embed(&pet, species, image_url, now, &state.config.rates);
+    let card = ui::pet_card(&state.art, &pet, species, now, &state.config.rates).await;
 
-    let mut response = CreateInteractionResponseMessage::new()
+    let response = CreateInteractionResponseMessage::new()
         .content(content)
-        .embed(embed);
-    if let Some(file) = attachment {
-        response = response.add_file(file);
-    }
+        .embed(card.embed)
+        .add_files(card.files);
     respond(ctx, cmd, response).await
 }
 
@@ -531,15 +522,12 @@ async fn show_memorial(
     pet: &Pet,
 ) -> Result<()> {
     let species = state.species.get_or_first(&pet.species);
-    let (image_url, attachment) = ui::art_for(&state.art, pet).await;
-    let embed = ui::memorial_embed(pet, species, image_url, now_secs());
+    let card = ui::pet_card(&state.art, pet, species, now_secs(), &state.config.rates).await;
 
-    let mut response = CreateInteractionResponseMessage::new()
+    let response = CreateInteractionResponseMessage::new()
         .content(format!("{} is no longer with us.", pet.name))
-        .embed(embed);
-    if let Some(file) = attachment {
-        response = response.add_file(file);
-    }
+        .embed(card.embed)
+        .add_files(card.files);
     respond(ctx, cmd, response).await
 }
 

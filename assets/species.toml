@@ -1,8 +1,8 @@
 # Adoptable species.
 #
 # Each entry needs a unique `key` made of letters, digits, underscores and
-# hyphens. The key is also the art folder name: art for `key = "blob"` lives in
-# `assets/pets/blob/`.
+# hyphens. The key is also the art folder name: art for `key = "cat"` lives in
+# `assets/pets/cat/`, with one PNG per mood.
 #
 # `favourite_food` matches the choices on /feed  : snack, meal, treat, greens
 # `favourite_game` matches the choices on /play  : fetch, puzzle, dance
@@ -11,49 +11,33 @@
 # species. Changes take effect on the next restart.
 
 [[species]]
-key = "blob"
-name = "Blob"
-emoji = "\U0001FAE7"
-description = "Agreeable, gelatinous, endlessly hungry."
-favourite_food = "snack"
-favourite_game = "fetch"
-
-[[species]]
-key = "dragon"
-name = "Dragon"
-emoji = "\U0001F409"
-description = "Small now. Will not stay small."
+key = "dog"
+name = "Dog"
+emoji = "🐶"
+description = "Golden coat, floppy ears, red bandana. Delighted by everyone."
 favourite_food = "meal"
-favourite_game = "dance"
+favourite_game = "fetch"
 
 [[species]]
 key = "cat"
 name = "Cat"
-emoji = "\U0001F431"
-description = "Tolerates the server. Barely."
+emoji = "🐱"
+description = "Orange tabby in a teal scarf. Tolerates the server. Barely."
 favourite_food = "treat"
 favourite_game = "puzzle"
 
 [[species]]
-key = "cactus"
-name = "Cactus"
-emoji = "\U0001F335"
-description = "Low maintenance, but not no maintenance."
-favourite_food = "greens"
-favourite_game = "puzzle"
-
-[[species]]
-key = "ghost"
-name = "Ghost"
-emoji = "\U0001F47B"
-description = "Already dead, and yet still needs feeding."
-favourite_food = "treat"
+key = "dragon"
+name = "Dragon"
+emoji = "🐉"
+description = "Jade scales and golden horns. Small now. Will not stay small."
+favourite_food = "meal"
 favourite_game = "dance"
 
 [[species]]
-key = "duck"
-name = "Duck"
-emoji = "\U0001F986"
-description = "Loud. Insistent. Beloved."
-favourite_food = "greens"
-favourite_game = "fetch"
+key = "mouse"
+name = "Mouse"
+emoji = "🐭"
+description = "Lavender fur, big pink ears, purple scarf. Small but bold."
+favourite_food = "snack"
+favourite_game = "puzzle"

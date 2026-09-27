@@ -1,0 +1,770 @@
+[
+  {
+    "character": "cat",
+    "state": "content",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      30,
+      24,
+      116,
+      116
+    ],
+    "colors": 22,
+    "sha256": "5ee53ffb11913e40bdbe79a0908d81f050d302a544ac1d8221aae253ec3d1a24"
+  },
+  {
+    "character": "cat",
+    "state": "dead",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      20,
+      122,
+      118
+    ],
+    "colors": 21,
+    "sha256": "0bf2713b0ed80fdcb8571e06282dc5dd5364d4ccf75ab0b8026a9bb7bdf2761e"
+  },
+  {
+    "character": "cat",
+    "state": "happy",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      12,
+      16,
+      114,
+      114
+    ],
+    "colors": 22,
+    "sha256": "6d4191efa07006ffca27451b85c2ad7ecfb4b16c76c65f71e959450c7c64f0ee"
+  },
+  {
+    "character": "cat",
+    "state": "hungry",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      30,
+      16,
+      120,
+      120
+    ],
+    "colors": 28,
+    "sha256": "403ab0256e5779e511c0105882d12defaad25a3b01f7654e87e5c216a04a0e3a"
+  },
+  {
+    "character": "cat",
+    "state": "sad",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      20,
+      36,
+      118,
+      120
+    ],
+    "colors": 24,
+    "sha256": "bdfb19205505a4252e45789b249316551954051b4b85c2493846341e093c69f2"
+  },
+  {
+    "character": "cat",
+    "state": "sick",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      24,
+      22,
+      118,
+      120
+    ],
+    "colors": 24,
+    "sha256": "de2e220470c97a3be9b6b127b02bc24627854e3a6a242f71f6ecb903fe13c452"
+  },
+  {
+    "character": "cat",
+    "state": "sleeping",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      21,
+      123,
+      118
+    ],
+    "colors": 20,
+    "sha256": "09cdf47ee0ea5cfcfe5c7bb2f30f333911e824a90e246a8f31a8dbca42df505d"
+  },
+  {
+    "character": "cat",
+    "state": "tired",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      20,
+      34,
+      118,
+      120
+    ],
+    "colors": 21,
+    "sha256": "e9575d1ff0a51c20adb44f0364dcfab6db1e73529ac1a5dfb9f1f8c075430c05"
+  },
+  {
+    "character": "dog",
+    "state": "content",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      22,
+      34,
+      116,
+      116
+    ],
+    "colors": 20,
+    "sha256": "40bd76b18f25ad3e4c5ccf30697ae6d6db0b142b2bceb15bfde21fe3f714dcd1"
+  },
+  {
+    "character": "dog",
+    "state": "dead",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      10,
+      24,
+      122,
+      118
+    ],
+    "colors": 20,
+    "sha256": "b8efe7dbbc2ffb2f72aab7605c8e79be9c81d69c0973238e283037dfc51b11cd"
+  },
+  {
+    "character": "dog",
+    "state": "happy",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      12,
+      22,
+      116,
+      114
+    ],
+    "colors": 19,
+    "sha256": "ea437d5565d54690a58728e1e754fbc6a383aa7af1f1600a0ded4017c15b4652"
+  },
+  {
+    "character": "dog",
+    "state": "hungry",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      22,
+      16,
+      120,
+      120
+    ],
+    "colors": 26,
+    "sha256": "711085eecbef32b832eefd1180a67d3d2277bf10cb7997578a207cabd37be05f"
+  },
+  {
+    "character": "dog",
+    "state": "sad",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      20,
+      40,
+      118,
+      120
+    ],
+    "colors": 22,
+    "sha256": "394df0a7939fcbd41c663c0a04d0dac979467df26ef69d1b007d6fb1d6604057"
+  },
+  {
+    "character": "dog",
+    "state": "sick",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      22,
+      22,
+      118,
+      120
+    ],
+    "colors": 23,
+    "sha256": "1ccbaf5f061185bb1bf6ebe4f7d5eb4cac928d8221d436951b4c9e4db6c12ce7"
+  },
+  {
+    "character": "dog",
+    "state": "sleeping",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      8,
+      21,
+      123,
+      118
+    ],
+    "colors": 20,
+    "sha256": "3feea8d47efd53ed32fe1badc4700d216ef4a7a6cd4c42e208755ff0717dd546"
+  },
+  {
+    "character": "dog",
+    "state": "tired",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      20,
+      34,
+      118,
+      120
+    ],
+    "colors": 19,
+    "sha256": "c89041d8ec9353dd151f710ebce9e8687742e211351ff49941ebf290ae1af643"
+  },
+  {
+    "character": "mouse",
+    "state": "content",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      18,
+      120,
+      116
+    ],
+    "colors": 28,
+    "sha256": "02322fd1a13f3d389d2d72e7d214f9d8990733d895c74795c38390528ecef736"
+  },
+  {
+    "character": "mouse",
+    "state": "dead",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      4,
+      18,
+      126,
+      118
+    ],
+    "colors": 26,
+    "sha256": "39532d05a2cadedd838cb5afbf8e872013981184f5b0a5186794ab963d556dc3"
+  },
+  {
+    "character": "mouse",
+    "state": "happy",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      12,
+      10,
+      120,
+      114
+    ],
+    "colors": 28,
+    "sha256": "497ebb2b9f45170e67ca0d5c2aeae035fef9baf8d1f1fbdd273ff1b8aac3f237"
+  },
+  {
+    "character": "mouse",
+    "state": "hungry",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      16,
+      120,
+      120
+    ],
+    "colors": 35,
+    "sha256": "d58d45b695274d3daf9e1c602a349231f14f595d573c89363214debdb8188a9b"
+  },
+  {
+    "character": "mouse",
+    "state": "sad",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      20,
+      122,
+      118
+    ],
+    "colors": 29,
+    "sha256": "49959e384fb5aed392fe4a40d2e63ffb44bde61b5bb1b41ef6709aad99b1b579"
+  },
+  {
+    "character": "mouse",
+    "state": "sick",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      22,
+      122,
+      118
+    ],
+    "colors": 30,
+    "sha256": "4fe8fb6710a68ec3b7f2f17464a0fdd2e9ab8617afeac95519c8d1fb7af23aaa"
+  },
+  {
+    "character": "mouse",
+    "state": "sleeping",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      4,
+      21,
+      123,
+      118
+    ],
+    "colors": 25,
+    "sha256": "063039ac89246fa01d8cad8c4cc2e5bb5f7be5e184ed61f4dd9bb1ca49e07965"
+  },
+  {
+    "character": "mouse",
+    "state": "tired",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      16,
+      22,
+      122,
+      118
+    ],
+    "colors": 27,
+    "sha256": "813b42fa09f733790a9469cb43b626f40bcd2ea2739791ff92964b41e41a1916"
+  },
+  {
+    "character": "dragon",
+    "state": "content",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      18,
+      124,
+      116
+    ],
+    "colors": 18,
+    "sha256": "a6dead41054b0d768aabe12c781b5c1b9216dd19c3de21ad023a58b99e5c7f22"
+  },
+  {
+    "character": "dragon",
+    "state": "dead",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      12,
+      18,
+      122,
+      118
+    ],
+    "colors": 19,
+    "sha256": "bd03e15bce651528f1c3a6def9ef058dc63e527a02042daefd10f8c4fdb27569"
+  },
+  {
+    "character": "dragon",
+    "state": "happy",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      10,
+      12,
+      124,
+      114
+    ],
+    "colors": 21,
+    "sha256": "8aa3ea56f1f18107dae9afdb7bb79ef5b78395e018e9255a5a198f524f55c130"
+  },
+  {
+    "character": "dragon",
+    "state": "hungry",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      16,
+      124,
+      120
+    ],
+    "colors": 28,
+    "sha256": "5c35e96f16c62518842517606a723dec155beb964e80ede00f7855fd2a9896db"
+  },
+  {
+    "character": "dragon",
+    "state": "sad",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      20,
+      120,
+      120
+    ],
+    "colors": 21,
+    "sha256": "d88b7eef2e7011a325904e36b4556f4540ab159d3edf0537d17b60dfef5b4ab8"
+  },
+  {
+    "character": "dragon",
+    "state": "sick",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      22,
+      120,
+      120
+    ],
+    "colors": 26,
+    "sha256": "ea2dcdad3076b1b1a67d56e23a52de5a548af79ab2bee20e3267c813d4111fb5"
+  },
+  {
+    "character": "dragon",
+    "state": "sleeping",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      10,
+      21,
+      123,
+      118
+    ],
+    "colors": 17,
+    "sha256": "6c8b808438807542ee3d4b07027fe808addd20d6f5905e060e8c8bae2c493818"
+  },
+  {
+    "character": "dragon",
+    "state": "tired",
+    "size": [
+      128,
+      128
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_values": [
+      0,
+      255
+    ],
+    "bounds": [
+      18,
+      22,
+      120,
+      120
+    ],
+    "colors": 17,
+    "sha256": "ac5b23ea3970f03effb72b0c83f9c47284bee8581047323cd241b6e9b58b8260"
+  }
+]

@@ -116,19 +116,12 @@ pub async fn sweep(state: &Arc<AppState>, http: &Http) -> Result<()> {
         };
 
         let species = state.species.get_or_first(&pet.species);
-        let (image_url, attachment) = ui::art_for(&state.art, &pet).await;
-        let embed = if pet.alive {
-            ui::status_embed(&pet, species, image_url, now, &state.config.rates)
-        } else {
-            ui::memorial_embed(&pet, species, image_url, now)
-        };
+        let card = ui::pet_card(&state.art, &pet, species, now, &state.config.rates).await;
 
-        let mut message = CreateMessage::new()
+        let message = CreateMessage::new()
             .content(message_for(alert, &pet))
-            .embed(embed);
-        if let Some(file) = attachment {
-            message = message.add_file(file);
-        }
+            .embed(card.embed)
+            .add_files(card.files);
 
         match ChannelId::new(channel_id as u64)
             .send_message(http, message)
